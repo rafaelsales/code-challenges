@@ -1,0 +1,19 @@
+# Taken from https://www.gov.uk/bank-holidays
+2015:
+  "2015-12-26": "Boxing Day"
+  "2015-12-25": "Christmas Day"
+  "2015-08-31": "Summer bank holiday"
+  "2015-05-25": "Spring bank holiday"
+  "2015-05-04": "Early May bank holiday"
+  "2015-04-06": "Easter Monday"
+  "2015-04-03": "Good Friday"
+  "2015-01-01": "New Year’s Day"
+2014:
+  "2014-12-26": "Boxing Day"
+  "2014-12-25": "Christmas Day"
+  "2014-08-25": "Summer bank holiday"
+  "2014-05-26": "Spring bank holiday"
+  "2014-05-05": "Early May bank holiday"
+  "2014-04-21": "Easter Monday"
+  "2014-04-18": "Good Friday"
+  "2014-01-01": "New Year’s Day"
