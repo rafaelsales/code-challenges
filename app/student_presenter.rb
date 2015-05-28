@@ -10,6 +10,6 @@ class StudentPresenter < Struct.new(:student)
   end
 
   def to_s
-    "#{last_name} #{first_name} #{campus} #{formatted_date_of_birth} #{favorite_color}"
+    "#{first_name} #{campus} #{formatted_date_of_birth}"
   end
 end

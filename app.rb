@@ -11,13 +11,10 @@ class StudentsApp
 
   def run!
     puts "\nOutput 1:"
-    print students_presenter.order_by(:campus_and_last_name)
+    print students_presenter.order_by(:campus_and_first_name)
 
     puts "\nOutput 2:"
-    print students_presenter.order_by(:date_of_birth)
-
-    puts "\nOutput 3:"
-    print students_presenter.order_by(:last_name_descending)
+    print students_presenter.order_by(:date_of_birth_descending)
   end
 
   private

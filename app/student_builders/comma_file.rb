@@ -9,12 +9,10 @@ module StudentBuilders
     end
 
     def students
-      @file.read.map do |last_name, first_name, campus, favorite_color, date_of_birth|
+      @file.read.map do |first_name, campus, date_of_birth|
         Student.new(first_name: first_name,
-                    last_name: last_name,
                     campus: campus,
-                    date_of_birth: parse_date(date_of_birth),
-                    favorite_color: favorite_color)
+                    date_of_birth: parse_date(date_of_birth))
       end
     end
 

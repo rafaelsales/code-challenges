@@ -5,14 +5,11 @@ class StudentsPresenter
 
   def order_by(order)
     case order
-    when :campus_and_last_name
-      @students.sort_by { |student| [student.campus, student.last_name] }
+    when :campus_and_first_name
+      @students.sort_by { |student| [student.campus, student.first_name] }
 
-    when :date_of_birth
-      @students.sort_by(&:date_of_birth)
-
-    when :last_name_descending
-      @students.sort_by(&:last_name).reverse
+    when :date_of_birth_descending
+      @students.sort_by(&:date_of_birth).reverse
 
     else
       raise ArgumentError, "Unknown order #{order.inspect}"

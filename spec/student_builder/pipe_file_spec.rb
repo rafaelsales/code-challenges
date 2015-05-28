@@ -8,8 +8,8 @@ describe StudentBuilders::PipeFile do
       students = builder.students
 
       students.count.must_equal 3
-      students[0].must_equal Student.new(first_name: "Timmothy", last_name: "Goyette", middle_initial: "E",
-                                         campus: "London", favorite_color: "Pacific Blue",
+      students[0].must_equal Student.new(first_name: "Timmothy",
+                                         campus: "London",
                                          date_of_birth: Date.new(1964, 10, 2))
     end
   end

@@ -14,13 +14,11 @@ module StudentBuilders
     end
 
     def students
-      @file.read.map do |last_name, first_name, middle_initial, campus, date_of_birth, favorite_color|
+      @file.read.map do |campus, date_of_birth, last_name, first_name|
         Student.new(first_name: first_name,
                     last_name: last_name,
-                    middle_initial: middle_initial,
                     campus: resolve_campus_name(campus),
-                    date_of_birth: parse_date(date_of_birth),
-                    favorite_color: favorite_color)
+                    date_of_birth: parse_date(date_of_birth))
       end
     end
 

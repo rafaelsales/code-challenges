@@ -8,9 +8,8 @@ describe StudentBuilders::DollarFile do
       students = builder.students
 
       students.count.must_equal 3
-      students[0].must_equal Student.new(first_name: "Rhiannon", last_name: "Nolan", middle_initial: "O",
-                                         campus: "Los Angeles", favorite_color: "Vivid Tangerine",
-                                         date_of_birth: Date.new(1974, 10, 04))
+      students[0].must_equal Student.new(first_name: "Rhiannon", last_name: "Nolan",
+                                         campus: "Los Angeles", date_of_birth: Date.new(1974, 10, 04))
     end
 
     it "converts each known city abbreviation to city name" do
@@ -26,7 +25,7 @@ describe StudentBuilders::DollarFile do
       let(:builder) { StudentBuilders::DollarFile.new(file.path) }
 
       before do
-        file.write "Sales $ Rafael $ C $ CE $ 7-6-1986 $ "
+        file.write "CE $ 7-6-1986 $ Sales $ Rafael"
         file.rewind
       end
 
