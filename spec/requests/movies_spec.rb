@@ -19,7 +19,7 @@ RSpec.describe 'Movies' do
         super_eight.touch
       end
 
-      When 'requesting index path' do
+      When 'GET /movies' do
         get '/movies'
       end
 

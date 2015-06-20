@@ -1,0 +1,2 @@
+# Be sure to restart your server when you modify this file.
+FavoriteMovies::Application.config.secret_token = 'f0919f4c0048e509fd7535e736fdbce7878876f42d9d19472f9f8a3f8fee8894ac33b2143184c7fa6f570db25235c4f3d66784e27b1f4515c6be0404f267b60c'
