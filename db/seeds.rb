@@ -1,7 +1,5 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Movie.find_or_create_by!(title: 'The Goonies', year: 1985)
+Movie.find_or_create_by!(title: 'Back to the Future', year: 1985)
+Movie.find_or_create_by!(title: 'Back to the Future Part II', year: 1989)
+Movie.find_or_create_by!(title: 'Back to the Future Part III', year: 1990)
+Movie.find_or_create_by!(title: 'Super 8', year: 2011)
