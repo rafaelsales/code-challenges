@@ -33,3 +33,22 @@ I'm building an API to manage Movies and users ratings.
 * Authenticates with Devise through HTTP Basic Authentication
 * Pundit for managing resource access policies
 * Tested with RSpec
+
+### Usage
+
+```
+bundle install
+bundle exec rake db:drop db:create db:migrate db:seed
+bundle exec rails server
+
+HOST=localhost:3000
+
+echo 'Listing all movies'
+curl http://$HOST:3000/movies
+
+echo 'Rating a movie'
+curl --form 'stars=4' -u rafael@favmovie.com:qwerty http://$HOST/movies/1/rating
+
+echo Unrating a movie'
+curl -X DELETE -u rafael@favmovie.com:qwerty http://$HOST/movies/1/rating
+```
