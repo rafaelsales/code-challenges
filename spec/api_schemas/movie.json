@@ -3,6 +3,7 @@
   "properties": {
     "id" : { "type" : "integer" },
     "title" : { "type" : "string" },
-    "year" : { "type" : "integer" }
+    "year" : { "type" : "integer" },
+    "average_rating" : { "type" : "string" }
   }
 }

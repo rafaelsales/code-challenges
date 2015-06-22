@@ -22,8 +22,10 @@ I'm building an API to manage Movies and users ratings.
 
 ### User Stories
 
-**[01]** A guest can see all movies
-**[02]** A guest can see movies ratings
+* [01] A guest can see all movies
+* [02] A guest can see movies ratings
+* [03] Admin and normal user can authenticate
+* [04] A logged user can rate a movie
 
 ### Technical Overview
 
